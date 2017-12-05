@@ -25,8 +25,8 @@ materialLoading(false)
 <html>
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/fechanique/material-modal/master/material-modal.css">
-		<script src="https://cdn.rawgit.com/fechanique/material-modal/master/material-modal.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/fechanique/material-loading/master/material-loading.css">
+		<script src="https://cdn.rawgit.com/fechanique/material-loading/master/material-loading.js"></script>
 	</head>
 	<body>
 		<button onclick="materialLoading(true);setTimeout({function(){materialLoading(false)}},3000)">Open loading modal</button>
