@@ -17,7 +17,6 @@ materialLoading(true)
 
 ### Close loading modal
 ```javscript
-
 materialLoading(false)
 ```
 
