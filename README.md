@@ -1,7 +1,7 @@
 # material-loading
 Vanilla JavaScript Google's MaterialDesign-like loading modal
 
-##Installation
+## Installation
 ```html
 <!-- include material lite libs -->
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
@@ -9,19 +9,19 @@ Vanilla JavaScript Google's MaterialDesign-like loading modal
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/fechanique/material-loading/master/material-loading.css">
 <script src="https://cdn.rawgit.com/fechanique/material-loading/master/material-loading.js"></script>
 ```
-##Functions
-###Open loading modal
+## Functions
+### Open loading modal
 ```javscript
 materialLoading(true)
 ```
 
-###Close loading modal
+### Close loading modal
 ```javscript
 
 materialLoading(false)
 ```
 
-##Example
+## Example
 ```html
 <html>
   <head>
