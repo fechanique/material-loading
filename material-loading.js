@@ -5,7 +5,7 @@ function materialLoading(state){
   else if(ml_ready) document.getElementById('materialLoading').className = 'hide';
   ml_state = state;
 }
-window.addEventListener('load', function(){
+window.addEventListener('ready', function(){
   console.log('material-loading.js v1.2')
   var ml = document.createElement('div');
     ml.id = 'materialLoading';
