@@ -13,10 +13,11 @@ window.addEventListener('load', function(){
   var mlCentered = document.createElement('div');
     mlCentered.id = 'materialLoadingCentered'
   var mlContent = document.createElement('div');
-    mlContent.id = 'materialLoadingContent'
-    mlContent.innerHTML = '<div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>'
-  mlCentered.appendChild(mlContent)
+    mlContent.id = 'materialLoadingContent';
+    mlContent.innerHTML = '<div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>';
+  mlCentered.appendChild(mlContent);
   ml.appendChild(mlCentered);
-  document.body.appendChild(ml)
-  materialLoading(ml_state)
+  document.body.appendChild(ml);
+  ml_ready = true;
+  materialLoading(ml_state);
 })
