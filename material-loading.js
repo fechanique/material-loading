@@ -2,8 +2,8 @@ function materialLoading(state){
   if(state) document.getElementById('materialLoading').className = 'show';
   else document.getElementById('materialLoading').className = 'hide';
 }
-window.addEventListener('load', function(){
-  console.log('material-loading.js v1.0')
+(function(){
+  console.log('material-loading.js v1.1')
   var ml = document.createElement('div');
     ml.id = 'materialLoading';
     ml.className = 'hide';
@@ -15,4 +15,4 @@ window.addEventListener('load', function(){
   mlCentered.appendChild(mlContent)
   ml.appendChild(mlCentered);
   document.body.appendChild(ml)
-})
+})();
