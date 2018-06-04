@@ -1,9 +1,12 @@
+ml_state = false;
+ml_ready = false;
 function materialLoading(state){
-  if(state) document.getElementById('materialLoading').className = 'show';
-  else document.getElementById('materialLoading').className = 'hide';
+  if(state && ml_ready) document.getElementById('materialLoading').className = 'show';
+  else if(ml_ready) document.getElementById('materialLoading').className = 'hide';
+  ml_state = state;
 }
-(function(){
-  console.log('material-loading.js v1.1')
+window.addEventListener('load', function(){
+  console.log('material-loading.js v1.2')
   var ml = document.createElement('div');
     ml.id = 'materialLoading';
     ml.className = 'hide';
@@ -15,4 +18,5 @@ function materialLoading(state){
   mlCentered.appendChild(mlContent)
   ml.appendChild(mlCentered);
   document.body.appendChild(ml)
-})();
+  materialLoading(ml_state)
+})
